@@ -1,24 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/AllExpensesHeader.dart';
+import 'package:responsive_dash_board/widgets/AllExpensesItemListView.dart';
+import 'package:responsive_dash_board/widgets/CustomBackGroundContainer.dart';
 
 class AllExpenses extends StatelessWidget {
   const AllExpenses({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: ShapeDecoration(
-        color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12)
-          )
-
-      ),
-      child: const Column(
+    return const CustomBackGroundContainer(
+      padding: 20,
+      child:  Column(
         children: [
-          AllExpensesHeader()
+          AllExpensesHeader(),
+          SizedBox(height: 16,),
+          AllExpensesItemListView()
         ],
       ),
     );
   }
 }
+
