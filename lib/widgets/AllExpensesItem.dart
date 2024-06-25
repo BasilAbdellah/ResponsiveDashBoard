@@ -5,6 +5,7 @@ import 'package:responsive_dash_board/widgets/Active_and_InActive_AllExpensesIte
 class AllExpensesItem extends StatelessWidget {
   const AllExpensesItem(
       {super.key, required this.ItemModel, required this.isSelected});
+
   final AllExpensesItemModel ItemModel;
   final bool isSelected;
   @override

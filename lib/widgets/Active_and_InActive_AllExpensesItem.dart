@@ -72,7 +72,7 @@ class ActiveAllExpensesItem extends StatelessWidget {
         children: [
           AllExpensesItemHeader(
             image: ItemModel.image,
-            imageBackGroundColor: Colors.white.withOpacity(0.10000000149011612),
+            imageBackground: Colors.white.withOpacity(0.10000000149011612),
             imageColor: Colors.white,
           ),
           const SizedBox(
