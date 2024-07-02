@@ -1,8 +1,11 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/DashBoardView.dart';
 
 void main() {
-  runApp(const ResponsiveDashBoard());
+  runApp(DevicePreview(
+      enabled: true,
+      builder:(context)=> ResponsiveDashBoard()));
 }
 
 class ResponsiveDashBoard extends StatelessWidget {

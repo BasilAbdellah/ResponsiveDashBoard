@@ -13,6 +13,7 @@ class CustomDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
+        width: MediaQuery.sizeOf(context).width*.7,
         color: Colors.white,
         child: CustomScrollView(
           slivers: [

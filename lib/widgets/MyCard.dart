@@ -12,7 +12,7 @@ class MyCard extends StatelessWidget {
       child: Container(
         decoration: ShapeDecoration(
             color: const Color(0xff4DB7F2),
-            image: const DecorationImage(image: AssetImage(Assets.imagesCardBackground  )),
+            image: const DecorationImage(fit: BoxFit.fill,image: AssetImage(Assets.imagesCardBackground  )),
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12))),
         child: Column(
@@ -33,7 +33,7 @@ class MyCard extends StatelessWidget {
                 
                 ],),
               ),
-            const SizedBox(height: 26,)
+           const  Flexible(child:  SizedBox(height: 26,))
           ],
         ),
       ),
